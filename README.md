@@ -1,28 +1,42 @@
 # SoroCloud
 
-> A simple, self-hostable file management service.
+> A local file workspace prototype.
 
-A foundation for a personal cloud drive with upload, folder organization, metadata, and access controls. Storage and authentication will be implemented server-side; never expose private files publicly by default.
+Preview and organize files selected by the user in the current browser session. This prototype does not upload to a server or provide cloud storage; add authenticated backend storage before deploying as a multi-user service.
 
-## Technology
+## Features
 
-PHP 8.3, MariaDB, Vanilla JavaScript.
+- Select multiple local files
+- Search selected file names
+- View file metadata
+- Remove items from the current session
 
-## Roadmap
+## Tech stack
 
-- [ ] Authentication design
-- [ ] File and folder model
-- [ ] Upload/download API
-- [ ] Access-control checks
-- [ ] Storage limits and audit logs
+HTML, CSS and vanilla JavaScript
 
-## Project status
+## Run locally
 
-Early development. Features are added incrementally and documented as they become available.
+Open `index.html` in a modern browser and select files.
 
-## Contributing
+## Scope and limitations
 
-Issues and focused pull requests are welcome. Please describe the problem, expected behavior, and steps to reproduce bugs.
+Files are read only for metadata and previews in this browser session. Nothing is uploaded.
+
+## Project structure
+
+```
+SoroCloud/
+├── index.html   # self-contained interface and application logic
+└── README.md    # overview, setup and scope
+```
+
+## Development principles
+
+- Keep the interface accessible, responsive and dependency-light.
+- Prefer clear, readable code over unnecessary abstractions.
+- Never commit credentials, private data or generated user files.
+- Document limitations honestly and add tests as the project grows.
 
 ## License
 
