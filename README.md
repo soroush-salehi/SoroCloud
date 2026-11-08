@@ -1,22 +1,22 @@
 # SoroCloud
 
-A local file workspace prototype.
+A browser-local file workspace prototype using IndexedDB.
 
-## Features
-- Select multiple local files
-- Search selected file names
-- Inspect file type and size
-- Remove files from the current session
+## Current features
+- Add multiple files from the device.
+- Store file blobs in browser IndexedDB.
+- Search files by name.
+- Preview images, download, and remove stored files.
+- Show file type and storage size.
+
+## Stack
+HTML, CSS, Vanilla JavaScript, IndexedDB.
 
 ## Run
-Open `index.html` and select files.
+Open `index.html` through a local static web server. Browser storage is scoped to the current site origin.
 
-## Scope
-Nothing is uploaded. This is not cloud storage; production use requires authenticated server-side storage and access controls.
+## Important limitations
+Files are stored only in the current browser profile. They are not uploaded to a server or synchronized between devices. Browser storage quotas and eviction behavior vary.
 
-## Structure
-- `index.html` — interface and local file metadata handling
-- `README.md` — project documentation
-
-## License
-No license selected. All rights reserved until a license is added.
+## Roadmap
+PHP upload API, authenticated accounts, quotas, folder metadata, sharing permissions, and server-side storage.
