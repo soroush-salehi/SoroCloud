@@ -1,43 +1,22 @@
 # SoroCloud
 
-> A local file workspace prototype.
-
-Preview and organize files selected by the user in the current browser session. This prototype does not upload to a server or provide cloud storage; add authenticated backend storage before deploying as a multi-user service.
+A local file workspace prototype.
 
 ## Features
-
 - Select multiple local files
 - Search selected file names
-- View file metadata
-- Remove items from the current session
+- Inspect file type and size
+- Remove files from the current session
 
-## Tech stack
+## Run
+Open `index.html` and select files.
 
-HTML, CSS and vanilla JavaScript
+## Scope
+Nothing is uploaded. This is not cloud storage; production use requires authenticated server-side storage and access controls.
 
-## Run locally
-
-Open `index.html` in a modern browser and select files.
-
-## Scope and limitations
-
-Files are read only for metadata and previews in this browser session. Nothing is uploaded.
-
-## Project structure
-
-```
-SoroCloud/
-├── index.html   # self-contained interface and application logic
-└── README.md    # overview, setup and scope
-```
-
-## Development principles
-
-- Keep the interface accessible, responsive and dependency-light.
-- Prefer clear, readable code over unnecessary abstractions.
-- Never commit credentials, private data or generated user files.
-- Document limitations honestly and add tests as the project grows.
+## Structure
+- `index.html` — interface and local file metadata handling
+- `README.md` — project documentation
 
 ## License
-
-No license has been selected yet. Until a license is added, all rights are reserved by the copyright holder.
+No license selected. All rights reserved until a license is added.
